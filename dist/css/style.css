@@ -1,0 +1,156 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+::selection {
+  background: var(--color-primary-dark);
+  color: var(--color-grey-light-1); }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.py-left-rigth-small {
+  padding: 0 1.6rem; }
+
+.py-left-rigth-normal {
+  padding: 0 3rem; }
+
+.py-big {
+  padding: 8rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .py-big {
+      padding: 4rem 0; } }
+
+.my-0-auto {
+  margin: 0 auto; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .my-3 {
+      margin: 2rem 0; } }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.my-big {
+  margin: 8rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .my-big {
+      margin: 4rem 0; } }
+
+.my-top-normal {
+  margin-top: 5rem; }
+
+.my-right-6 {
+  margin-right: 6rem; }
+
+.my-bottom-small {
+  margin-bottom: 1.6rem; }
+
+.my-bottom-3 {
+  margin-bottom: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .my-bottom-3 {
+      margin-bottom: 1rem; } }
+
+.my-bottom-middle {
+  margin-bottom: 4rem; }
+
+.my-bottom-big {
+  margin-bottom: 8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .my-bottom-big {
+      margin-bottom: 4rem; } }
+
+.u-center-text {
+  text-align: center; }
