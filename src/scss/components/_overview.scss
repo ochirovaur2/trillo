@@ -1,0 +1,52 @@
+.overview{
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+	////////////////////////
+	// Stars
+	&__stars{
+		display: flex;
+		flex: 1;
+	}
+	&__icon-star{
+		width: 2rem;
+		height: 2rem;
+		&:not(:last-child){
+			fill: var(--color-primary);
+		}
+	}
+
+	//////////////////////
+	/// Location
+	&__location{
+		display: flex;
+		padding: 0 2rem;
+	}
+	&__location-star{
+		width: 2rem;
+		height: 2rem; 
+		fill: var(--color-primary);
+	}
+	/////////////////////
+	// Rating
+
+	&__rating{
+		align-self: stretch;
+		background: var(--color-primary-light);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 0 2.5rem;
+		color: var(--color-grey-light-1);
+		
+	}
+	&__rating-average{
+		font-size: 2.3rem;
+		margin-bottom: -3px;
+	}
+	&__rating-count{
+		font-size: 0.8rem;
+	}
+}

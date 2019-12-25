@@ -1,0 +1,12 @@
+.gallery{
+	display: flex;
+	justify-content: space-around;
+	&__item{
+
+		flex: 1 0;
+	}
+	&__img{
+
+		width: 100%;
+	}
+}

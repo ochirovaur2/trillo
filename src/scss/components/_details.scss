@@ -1,0 +1,22 @@
+.details{
+	display: flex;
+	padding: 4.5rem;
+	//////////////////
+	// Main settings
+	&__main-info{
+		padding: 3rem;
+	}
+
+	//////////////////
+	///// List
+	&__list{
+		padding: 3rem;
+		font-size: 1.4rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item{
+		flex: 0 0 50%;
+		margin-bottom: 0.7rem;
+	}	
+}

@@ -1,14 +1,23 @@
 @import "abstracts/mixins";
 @import "abstracts/functions";
 @import "abstracts/variables";
+@import "abstracts/animations";
 
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
 @import "base/utilities";
 
-// @import "components/button";
-// @import "components/container";
+@import "components/buttons";
+@import "components/container";
+@import "components/search-form";
+@import "components/user-nav";
+@import "components/content";
+@import "components/list";
+@import "components/gallery";
+@import "components/overview";
+@import "components/details";
+@import "components/recommend";
 // @import "components/composition";
 // @import "components/tours-cards";
 // @import "components/book";
@@ -17,7 +26,8 @@
 @import "layout/nav";
 @import "layout/header";
 @import "layout/footer";
-
+@import "layout/sidebar";
+@import "layout/hotel-view";
 @import "pages/home";
 
 
