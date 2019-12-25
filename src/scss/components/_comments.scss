@@ -1,5 +1,5 @@
 .comments{
-
+	font-size: 1.6rem;
 	flex: 0 0 30%;
 	&__item{
 		position: relative;
@@ -9,7 +9,7 @@
 			content: "\201C";
 			position: absolute;
 			top: -1rem;
-	    	left: -0.5rem;
+	    	left: -1rem;
 			font-size: 10rem;
 			z-index: 1;
 			line-height: 1;

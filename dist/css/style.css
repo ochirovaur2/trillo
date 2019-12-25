@@ -222,7 +222,7 @@ li {
 .btn-inline {
   display: inline-block;
   color: var(--color-primary);
-  font-size: 1.2rem; }
+  font-size: inherit; }
 
 .container {
   margin: 8rem auto;
@@ -375,16 +375,18 @@ li {
   .gallery__item {
     flex: 1 0; }
   .gallery__img {
+    display: block;
     width: 100%; }
 
 .overview {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-grey-light-1);
-  align-items: center; }
+  align-items: center;
+  font-size: 1.4rem; }
   .overview__stars {
     display: flex;
-    flex: 1; }
+    margin-right: auto; }
   .overview__icon-star {
     width: 2rem;
     height: 2rem; }
@@ -450,6 +452,7 @@ li {
       margin-right: -2rem; }
 
 .comments {
+  font-size: 1.6rem;
   flex: 0 0 30%; }
   .comments__item {
     position: relative;
@@ -459,7 +462,7 @@ li {
       content: "\201C";
       position: absolute;
       top: -1rem;
-      left: -0.5rem;
+      left: -1rem;
       font-size: 10rem;
       z-index: 1;
       line-height: 1;
