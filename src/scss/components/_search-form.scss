@@ -3,6 +3,10 @@
 	align-items: center;
 	justify-content: center;
 	flex: 0 0 40%;
+	@include respond(phone) { // width < 900?
+        order: 1;
+        flex: 0 0 100%;
+    }
 	&__text{
 		
 		border: none;

@@ -5,4 +5,7 @@
     -webkit-box-shadow: var(--shadow-dark);
     box-shadow: var(--shadow-dark);
     min-height: 50rem;
+    @include respond(tab-port) {
+        margin: 0;
+    }
 }

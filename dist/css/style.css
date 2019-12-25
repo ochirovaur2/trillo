@@ -58,8 +58,16 @@ Grey dark 3: #999
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -223,12 +231,19 @@ li {
   -webkit-box-shadow: var(--shadow-dark);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      margin: 0; } }
 
 .search-form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 40%; }
+  @media only screen and (max-width: 37.5em) {
+    .search-form {
+      order: 1;
+      flex: 0 0 100%; } }
   .search-form__text {
     border: none;
     font-family: inherit;
@@ -267,6 +282,12 @@ li {
   justify-content: center;
   align-items: stretch;
   align-self: stretch; }
+  @media only screen and (max-width: 56.25em) {
+    .user-nav {
+      flex: 0 0 27%; } }
+  @media only screen and (max-width: 37.5em) {
+    .user-nav {
+      flex: 0 0 40%; } }
   .user-nav__icon-box {
     flex: 1;
     display: flex;
@@ -306,6 +327,9 @@ li {
 .content {
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .list {
   margin-top: 2rem; }
@@ -391,11 +415,18 @@ li {
 .details {
   display: flex;
   padding: 3rem;
-  background-color: var(--color-grey-light-3); }
+  justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .details {
+      flex-direction: column; } }
   .details__main-info {
     padding: 3rem;
     background-color: var(--color-grey-light-1);
-    flex: 1; }
+    flex: 0 0 60%;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .details__main-info {
+        flex-direction: column; } }
   .details__list {
     padding: 3rem;
     font-size: 1.4rem;
@@ -461,17 +492,25 @@ li {
   height: 7rem;
   align-items: center;
   border-bottom: 1px solid var(--color-grey-light-3);
-  background: var(--color-grey-light-1); }
+  background: var(--color-grey-light-1);
+  height: 100%;
+  padding: 1rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      flex-wrap: wrap; } }
   .header__logo-box {
     padding: 0 2rem; }
   .header__logo {
-    height: 3.25rem; }
+    height: 45px; }
 
 .footer {
   text-align: center;
   padding: 2rem;
   color: var(--color-grey-light-1);
   font-size: 1.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      display: none; } }
 
 .sidebar {
   background: var(--color-grey-dark-1);
