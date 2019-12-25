@@ -211,6 +211,8 @@ li {
     transform: translateX(-50%);
     text-align: center;
     opacity: 0; }
+  .btn:hover {
+    background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light)); }
   .btn:hover .btn__visible {
     transform: translateY(100px);
     opacity: 0; }
@@ -462,11 +464,15 @@ li {
       content: "\201C";
       position: absolute;
       top: -1rem;
-      left: -1rem;
+      left: 0rem;
       font-size: 10rem;
       z-index: 1;
       line-height: 1;
-      color: var(--color-grey-light-4); }
+      color: var(--color-grey-light-2);
+      z-index: 1; }
+  .comments__text {
+    position: relative;
+    z-index: 10; }
   .comments__info {
     display: flex;
     justify-content: space-between;

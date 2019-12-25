@@ -35,6 +35,9 @@
 	}
 	////////////////////////////
 	//Hover effects
+	&:hover{
+		background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
+	}
 	&:hover &__visible{
 		transform: translateY(100px);
 		opacity: 0;

@@ -9,13 +9,21 @@
 			content: "\201C";
 			position: absolute;
 			top: -1rem;
-	    	left: -1rem;
+	    	left: 0rem;
 			font-size: 10rem;
 			z-index: 1;
 			line-height: 1;
-			color: var(--color-grey-light-4);
+			color: var(--color-grey-light-2);
+			z-index: 1;
 		}
 
+	}
+	////////////////////
+	// text
+
+	&__text{
+		position: relative;
+		z-index: 10;
 	}
 	////////////////
 	/// Comment info
