@@ -14,7 +14,6 @@
 			z-index: 1;
 			line-height: 1;
 			color: var(--color-grey-light-4);
-			
 		}
 
 	}
@@ -26,6 +25,21 @@
 		justify-content: space-between;
 		align-items: center;
 
+
+	}
+
+	///////////////
+	// User
+	&__user-info{
+		margin-right: auto;
+	}
+
+	&__user-name{
+		
+	}
+
+	&__date{
+		font-size: 0.8rem;
 	}
 
 	////////////////
@@ -34,6 +48,7 @@
 	&__img{
 		width: 4.5rem;
 		border-radius: 50%;
+		margin-right: 1rem;
 	}
 	&__user-name{
 		font-size: 1.1rem;

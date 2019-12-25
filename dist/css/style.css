@@ -471,9 +471,14 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  .comments__user-info {
+    margin-right: auto; }
+  .comments__date {
+    font-size: 0.8rem; }
   .comments__img {
     width: 4.5rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 1rem; }
   .comments__user-name {
     font-size: 1.1rem;
     font-weight: 600;
