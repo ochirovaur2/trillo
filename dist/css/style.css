@@ -335,10 +335,24 @@ li {
 
 .list {
   margin-top: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .list {
+      display: flex;
+      margin-top: 0rem; } }
   .list__item {
     position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .list__item {
+        flex: 0 0 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     .list__item:not(:last-child) {
       margin-bottom: 0.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .list__item:not(:last-child) {
+          margin-bottom: 0rem; } }
     .list__item_active {
       background: var(--color-primary); }
     .list__item::before {
@@ -370,6 +384,9 @@ li {
     font-size: 1.4rem;
     position: relative;
     z-index: 10; }
+    @media only screen and (max-width: 37.5em) {
+      .list__link:link, .list__link:visited {
+        flex-direction: column; } }
 
 .gallery {
   display: flex;
