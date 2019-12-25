@@ -1,0 +1,50 @@
+.comments{
+
+	flex: 0 0 30%;
+	&__item{
+		position: relative;
+		background-color: var(--color-grey-light-1);
+		padding:  2rem;
+		&::before{
+			content: "\201C";
+			position: absolute;
+			top: -1rem;
+	    	left: -0.5rem;
+			font-size: 10rem;
+			z-index: 1;
+			line-height: 1;
+			color: var(--color-grey-light-4);
+			
+		}
+
+	}
+	////////////////
+	/// Comment info
+
+	&__info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	////////////////
+	//// Comments photo 
+
+	&__img{
+		width: 4.5rem;
+		border-radius: 50%;
+	}
+	&__user-name{
+		font-size: 1.1rem;
+    	font-weight: 600;
+    	text-transform: uppercase;
+    	margin-bottom: .4rem;
+	}
+	&__rating{
+		color: var(--color-primary);
+		font-size: 2.2rem;
+	}
+	
+
+}
